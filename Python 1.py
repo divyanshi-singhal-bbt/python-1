@@ -11,7 +11,7 @@ while(i <= n):
     elif(o == "print"):
         print(list)
 
-    elif(o == "2"):
+    elif(o == "remove"):
         a = int(input("Enter value: "))
         list.remove(a)
     
@@ -30,3 +30,4 @@ while(i <= n):
     
     i = i + 1
 print(list)
+
