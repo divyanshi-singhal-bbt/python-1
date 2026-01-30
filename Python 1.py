@@ -1,17 +1,32 @@
+n = int(input("Enter the number of operations: "))
 list = []
-list.append(1)
-list.append(2)
-list.append(4)
-list.append(-2)
-list.insert(1,6)
-print(list)
-list.remove(2)
-print(list)
-list.append(5)
-print(list)
-list.sort()
-print(list)
-list.pop()
-print(list)
-list.reverse()
+i = 1
+while(i <= n):
+    o = input("Enter operation to be performed: ")
+    if(o == "insert"):
+        j = int(input("Enter value: "))
+        k = int(input("Enter index: "))
+        list.insert(k,j)
+
+    elif(o == "print"):
+        print(list)
+
+    elif(o == "2"):
+        a = int(input("Enter value: "))
+        list.remove(a)
+    
+    elif(o == "append"):
+        b = int(input("Enter value: "))
+        list.append(b)
+    
+    elif(o == "sort"):
+        list.sort()
+    
+    elif(o == "pop"):
+        list.pop()
+    
+    elif(o == "reverse"):
+        list.reverse()
+    
+    i = i + 1
 print(list)
